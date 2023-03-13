@@ -31,14 +31,20 @@
     </nav>
     <main style="width: 1000px; margin: 0; margin-left: 20%; margin-right: 20%; margin-top: 10px;display: block;">
 
-        <select id="test1" style="height:50px; width:100px; text-align: center;">
-            <option value="1">FPS</option>
-            <option value="2">2</option>
-        </select>
-        
-        <button class="btn btn-primary" type="button" onclick="" >OK</button>
-
-
+        <div style="display: flex;">
+            <div style="display: flex;">
+                <h2>Genre: </h2>
+                <select id="selectGenre" style="margin-left:5px; margin-right:5px; height:50px; width:100px; text-align: center;">
+                </select>
+                <button class="btn btn-primary" type="button" onclick="" >OK</button>
+            </div>
+            
+            <div style="display:flex; margin-left: auto; margin-right: 0px;">
+                <h2>Prijs: </h2>
+                <input type="number" id="test1" style="margin-left:5px; margin-right:5px;height:50px; width:100px; text-align: center;"></input>
+                <button class="btn btn-primary" type="button" onclick="" >OK</button>
+            </div>
+        </div>
 
         <div class="card" style="background: lightslategrey; height: 1000px; margin-top: 10px;" >
             <div class="card-body">
