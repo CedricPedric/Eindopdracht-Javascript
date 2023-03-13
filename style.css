@@ -1,0 +1,86 @@
+p{
+    font-family: sans-serif;
+}
+
+.headers{ 
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: sans-serif;
+}
+
+.containers{
+    border: 1px solid lightslategray;
+}
+
+#navbar{
+    width: 1000px;
+    margin-left: 20%; 
+    margin-right: 20%; 
+
+}
+.containers-games {
+    border: 2px solid black;
+    padding: 5px;
+    width: 150px;
+    height: 70px;
+    margin-top: 12px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#container-gamepicker{
+    border: 2px solid black;
+    padding: 5px;
+    width: 150px;
+    height: 70px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    right: 22px;
+}
+
+.tag-text{
+    font-weight: bold;
+}
+
+.systeemeisen-list li{
+    margin-bottom: 5px;
+}
+
+.recenties-list li{
+    margin-bottom: 7px;
+}
+
+.recenties-text{
+    font-size: 18px;
+    font-family: sherrif;
+    margin: 0px;
+}
+
+.containers-games{
+    position: absolute;
+    background-color: red;
+    overflow: scroll;
+    height: 25px;
+    max-height: 50px;
+}
+
+.checkbox-round{
+    margin-top: 18px;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: greenyellow;
+}
