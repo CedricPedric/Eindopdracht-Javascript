@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>Hollow Knight</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -10,6 +9,7 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
     <body style="background-color: floralwhite;">
 
@@ -30,37 +30,37 @@
         </div>
         </nav>
 
-        <main style="width: 1000px; margin: 0; margin-left: 20%; margin-right: 20%; margin-top: 10px;display: block;">
+        <main>
             <!-- The Game Page + The Rating Box -->
             <section>
-                <div style="display: flex;">
-                    <div class="card" style="background: lightslategrey; height: 250px; width: 70%; padding:0px;">
+                <div class="flex-containers">
+                    <div class="card explanationContainers">
                         <div class="card-body">
                             <h2 class="headers">Hollow Knight</h2>
-                            <p style="margin-top: 20px; font-family: sans-serif; font-size: 18px;">
+                            <p class="explanationText">
                                 Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.
                             </p>
                             
-                            <div style="margin-top: 30px; display: flex;">
-                                <div class="card" style="background: rgb(132, 183, 200); width:max-content; height:62px; margin-right: 10px;">
+                            <div class="allGenreContainer">
+                                <div class="card genreContainer">
                                     <div class="card-body" style="display:flex; align-items: center;">
                                         <p class="tag-text">Souls-achtig</p>
                                     </div>
                                 </div>
-                                <div class="card" style="background: rgb(132, 183, 200); width:max-content; height:62px;  margin-right: 10px;">
-                                    <div class="card-body">
+                                <div class="card genreContainer">
+                                    <div class="card-body genreBody">
                                         <p class="tag-text">Metroidvania</p>
                                     </div>
                                 </div>
-                                <div class="card" style="background:rgb(132, 183, 200); width:max-content; height:62px; margin-right: 10px;">
-                                    <div class="card-body">
+                                <div class="card genreContainer">
+                                    <div class="card-body genreBody">
                                         <p class="tag-text">Platformer</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>  
-                    <div style="height: 250px; width: 30%; padding:0px; background: lightslategray; margin-left: 1px" class="card">
+                    <div class="card infoContainer">
                         <div class="card-body">
                             <p style="font-weight:bold; margin-bottom:5px;">Rating ⭐ ⭐ ⭐ ⭐ ⭐ </p>
                             <p style="font-weight:bold; margin-bottom:5px;">Single player</p>                        
@@ -71,11 +71,11 @@
                     </div>
                 </div>
 
-                <div style="margin-top:1px; margin-bottom:1px; height:225px; display: flex; align-items: center;  gap: 10px; padding: 0px; background: lightslategray" class="card">
-                    <div class="card-body">
-                        <img style="width: auto; height:175px; margin-left: 10px" alt="hollowknight-image-1" src="images/hollowknight1.jpg">
-                        <img style="width: auto; height:175px;" alt="hollowknight-image-2" src="images/hollowknight2.jpg">
-                        <img style="width: auto; height:175px;" alt="hollowknight-image-3" src="images/hollowknight3.jpg">
+                <div class="card photoContainer">
+                    <div class="card-body photoBody">
+                        <img alt="hollowknight-image-1" src="images/hollowknight1.jpg">
+                        <img alt="hollowknight-image-2" src="images/hollowknight2.jpg">
+                        <img alt="hollowknight-image-3" src="images/hollowknight3.jpg">
                     </div>
                 </div>
             </section>

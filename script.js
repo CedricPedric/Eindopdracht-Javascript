@@ -9,21 +9,25 @@ function ratingHigherThen(minimumRating,games){
     }
 }
 
-function containsGenre(genre, games) {
+function containsGenre(games, genre) {
+    let gamesThatContainGenre = []
     for (const x in games){
         if (games[x]["genre"] == genre){
-            console.log(games[x]["title"])
+            gamesThatContainGenre.push(games[x])
         }
     }
+    return(gamesThatContainGenre)
 }
 
-function priceRangeLowerThen(price,games){
+function priceRangeLowerThen(games,price){
+    let gamesThatContainPrice = []
     for (const x in games){
         if(games[x]["price"] < price){
-            console.log(games[x]["title"])
-        }data
-
+            gamesThatContainPrice.push(games[x])
+        }
     }
+    console.log()
+    return(gamesThatContainPrice)
 }
 
 const containerGames = document.getElementById('container-games');
@@ -96,6 +100,7 @@ function makeTheCards(games){
 
 makeTheCards(data)
 
+
 var list1= []
 for (const x in data){
     if (list1.includes(data[x]["genre"]) == false){
@@ -113,8 +118,24 @@ for (const y in list1){
 
 
 const checkBox1 = document.getElementById("Counter-Strike: Global Offensive-checkbox")
-const button = document.getElementById('calculate-button');
-button.addEventListener("click", function () {
+
+const calculateButton = document.getElementById('calculateButton');
+calculateButton.addEventListener("click", function () {
     console.log(checkBox1.checked);
     console.log(selectGenre.value)
 });
+
+
+const genreButton = document.getElementById("genreButton")
+genreButton.addEventListener("click", function (){
+    containerGames.innerHTML= '';
+    makeTheCards(containsGenre(data,selectGenre.value))
+})
+
+const priceInput =  document.getElementById("priceInput")
+const priceButton = document.getElementById("priceButton")
+priceButton.addEventListener("click", function (){
+    containerGames.innerHTML= '';
+    console.log(priceInput.value)
+    makeTheCards(priceRangeLowerThen(data,priceInput.value))
+})
