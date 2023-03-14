@@ -1,3 +1,6 @@
+body{
+    background-color: floralwhite;
+}
 p{
     font-family: sans-serif;
 }
@@ -43,6 +46,18 @@ main{
     display: flex;
 }
 
+.infoText{
+    margin-bottom: 5px;
+}
+
+.infoTextBold{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.subInfoContainer{
+    position: absolute;
+    bottom: 0px;
+}
 .infoContainer{
     height: 250px; 
     width: 30%; 
@@ -78,6 +93,13 @@ img{
     width: auto; 
     height:175px;
 }
+.systemRequirementsContainers{
+    margin-top:1px; 
+    margin-bottom:1px; 
+    height:250px;
+    padding: 0px; 
+    background: lightslategray
+}
 #navbar{
     width: 1000px;
     margin-left: 20%; 
@@ -110,10 +132,26 @@ img{
     font-weight: bold;
 }
 
+.systeemeisen-list{
+    list-style: none; 
+    padding: 0px;
+}
+
 .systeemeisen-list li{
     margin-bottom: 5px;
 }
 
+.reviewContainers{
+    margin-top:1px; 
+    margin-bottom:1px; 
+    height:250px; 
+    padding: 0px; 
+    background: lightslategray
+}
+.recenties-list{
+    list-style: none; 
+    padding: 0px;
+}
 .recenties-list li{
     margin-bottom: 7px;
 }
