@@ -218,3 +218,32 @@ img{
 #priceText{
     color: white;
 }
+
+#selectGenre{
+    margin-left:5px; margin-right:5px; height:50px; width:100px; text-align: center;
+}
+
+#ratingContainer{
+    margin-left: 12%;
+}
+
+#priceContainer{
+    display:flex; margin-left: auto; margin-right: 0px;
+}
+#priceInput{
+    margin-left:5px; margin-right:5px;height:50px; width:100px; text-align: center;
+}
+
+#containerGamesCard{
+    background: lightslategrey; height: auto; max-height: 1000px; margin-top: 10px;
+}
+#container-games{
+    overflow: auto; max-height: 925px;
+}
+
+#containerPriceButton{
+    display: flex; justify-content: flex-end;
+}
+#calculateButton{
+    margin-top: 10px; margin-right: 0px; width:125px;
+}

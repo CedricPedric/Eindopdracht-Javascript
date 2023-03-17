@@ -32,12 +32,12 @@
         <div id="filterContainer" class="flex-containers">
             <div class="flex-containers">
                 <h2>Genre: </h2>
-                <select id="selectGenre" style="margin-left:5px; margin-right:5px; height:50px; width:100px; text-align: center;">
+                <select id="selectGenre">
                 </select>
                 <button class="btn btn-primary" type="button" id="genreButton">OK</button>
             </div>
 
-            <div class="flex-containers" style="margin-left :12.5%;">
+            <div class="flex-containers" id="ratingContainer">
                 <h2>Rating: </h2>
                 <select id="selectRating" style="margin-left:5px; margin-right:5px; height:50px; width:100px; text-align: center;">
                     <option value="1">1</option>
@@ -49,19 +49,19 @@
                 <button class="btn btn-primary" type="button" id="ratingButton">OK</button>
             </div>
             
-            <div style="display:flex; margin-left: auto; margin-right: 0px;">
+            <div id="priceContainer">
                 <h2>Prijs: </h2>
-                <input type="number" id="priceInput" style="margin-left:5px; margin-right:5px;height:50px; width:100px; text-align: center;"></input>
+                <input type="number" id="priceInput"></input>
                 <button class="btn btn-primary" type="button" id="priceButton">OK</button>
             </div>
         </div>
 
-        <div class="card" style="background: lightslategrey; height: auto; max-height: 1000px; margin-top: 10px;" >
+        <div class="card" id=containerGamesCard>
             <div class="card-body">
-                <div id="container-games" style="overflow: auto; max-height: 925px;">
+                <div id="container-games">
                 </div>
-                <div id="containerPriceButton" style="display: flex; justify-content: flex-end;">
-                    <button id="calculateButton" class="btn btn-primary" type="button" style="margin-top: 10px; margin-right: 0px; width:125px;" onclick="" >Berekenen</button>
+                <div id="containerPriceButton">
+                    <button id="calculateButton" class="btn btn-primary" type="button">Berekenen</button>
                 </div>
                 </div>
             </div>
