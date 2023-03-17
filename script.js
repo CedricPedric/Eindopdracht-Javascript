@@ -1,6 +1,8 @@
 import data from './games.json' assert { type: "json"};
 
+// ahh yes very good code keep at it with yo coding skills -Brenda
 
+//These three functions filter trough the json file I made them return a list because
 function ratingHigherThen(games,rating){
     let gamesThatContainRating = []
     for (const x in games){
@@ -28,7 +30,6 @@ function priceRangeLowerThen(games,price){
             gamesThatContainPrice.push(games[x])
         }
     }
-    console.log()
     return(gamesThatContainPrice)
 }
 
@@ -151,7 +152,6 @@ function makeTheCart(games){
 }}
 
 function priceChange(inCart){
-    console.log(inCart)
     if (inCart.lenght != 0){
         var y = 0
         for (const x in inCart){
@@ -170,7 +170,7 @@ var onScreenGames = data
 
 makeTheCards(data)
 
-//Makes The Select Container Dynamic and contain genres that are in the json
+//Makes The Select Container Dynamic and contain genres that are in the json also does everything for the selector
 var list1= []
 for (const x in data){
     if (list1.includes(data[x]["genre"]) == false){
@@ -184,24 +184,13 @@ for (const y in list1){
     option.text = list1[y];
     selectGenre.add(option);
 };
-
-// ahh yes very good code keep at it with yo coding skills -Brenda
-
 const genreButton = document.getElementById("genreButton")
 genreButton.addEventListener("click", function (){
     containerGames.innerHTML= '';
     onScreenGames = containsGenre(data,selectGenre.value)
     makeTheCards(containsGenre(data,selectGenre.value))
 });
-
-const priceInput =  document.getElementById("priceInput")
-const priceButton = document.getElementById("priceButton")
-priceButton.addEventListener("click", function (){
-    containerGames.innerHTML= '';
-    onScreenGames = priceRangeLowerThen(data,priceInput.value)
-    makeTheCards(priceRangeLowerThen(data,priceInput.value))
-});
-
+//This part is for the rating
 const selectRating = document.getElementById("selectRating")
 const ratingButon = document.getElementById("ratingButton")
 ratingButon.addEventListener("click", function (){
@@ -210,14 +199,20 @@ ratingButon.addEventListener("click", function (){
     console.log(onScreenGames)
     makeTheCards(ratingHigherThen(data,selectRating.value))
 });
+//This part is for the price input
+const priceInput =  document.getElementById("priceInput")
+const priceButton = document.getElementById("priceButton")
+priceButton.addEventListener("click", function (){
+    containerGames.innerHTML= '';
+    onScreenGames = priceRangeLowerThen(data,priceInput.value)
+    makeTheCards(priceRangeLowerThen(data,priceInput.value))
+});
 
-
+//Here i get more elements so i can change the later
 const filterContainer = document.getElementById("filterContainer")
 const calculateButton = document.getElementById('calculateButton');
-
 const containerPriceButton = document.getElementById("containerPriceButton")
 calculateButton.addEventListener("click", function () {
-
     calculateButton.remove()
     const checkedGames = checkSelectedGames(onScreenGames)
     containerGames.innerHTML = ''
