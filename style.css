@@ -179,3 +179,42 @@ img{
 .checkbox-round:checked {
     background-color: lightskyblue;
 }
+
+.divCheckBox{
+    display: flex;
+    width: 5%;
+}
+
+.gameCards{
+    height : 55px;
+    width : 875px;
+    margin-top : 5px;
+    margin-bottom:  5px;
+    background : lightblue;
+    padding : 12px;
+}
+.divTitle{
+    width : 90%;
+    align-items: center;
+}
+.divCard{
+    display: flex;
+    width: 95%;
+}
+
+.deleteButtons{
+    margin: 5px;
+}
+
+.priceTextCard{
+    background-color:#0275d8;
+    width: 75px;
+}
+.priceTextCardBody{
+    text-align: center;
+    padding-top: 13px;
+}
+
+#priceText{
+    color: white;
+}
